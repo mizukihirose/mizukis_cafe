@@ -1,0 +1,8 @@
+<form action={% url 'mizukis_cafe:modify_db' %} method="POST">
+  {% csrf_token %}
+  <label for="name">Beans name:</label>
+  <input type="text" name="name" id="name">
+  <label for="rating">Rate:</label>
+  <input type="number" step="0.5">
+  <input type="submit" value="Submit">
+</form>

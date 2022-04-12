@@ -1,0 +1,6 @@
+<ul>
+{% for i in beans %}
+  <li>{{ i.name }}</li>
+{% endfor %}
+</ul>
+<a href="{% url 'mizukis_cafe:add_beans' %}">Click</a>
